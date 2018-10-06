@@ -1,0 +1,3 @@
+Composition vs Inheritance
+Modules vs Inheritance in Ruby
+abilities and properties are assigned in groups instead of inherited
