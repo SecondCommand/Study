@@ -1,0 +1,10 @@
+Redux
+Reducer: takes the current state, an action, and produces next state
+Actions: change state. Requires only a type “”
+
+Pure vs impure functions
+The return value of the pure functions solely depends on its arguments Hence, if you call the pure functions with the same set of arguments, you will always get the same return values. They do not have any side effects like network or database calls. They do not modify the arguments which are passed to them.
+
+Indirect vs Direct
+Tailed vs nontaiiled
+Recursion space requirements
