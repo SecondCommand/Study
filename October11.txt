@@ -1,22 +1,22 @@
 SQL vs NoSQL
 * Columnar databases, for dealing with massive collections 
-of simple structured data, such as log files. Google, for 
-its part, has Bigtable: a distributed, column-oriented data
- store to handle structured data associated with the company's
-  Internet search and Web services operations, including Web 
-  indexing, MapReduce, Google Maps, Google Book Search, "My 
-  Search History," Google Earth, Blogger.com, Google Code hosting, YouTube, and Gmail.
+    of simple structured data, such as log files. Google, for 
+    its part, has Bigtable: a distributed, column-oriented data
+    store to handle structured data associated with the company's
+    Internet search and Web services operations, including Web 
+    indexing, MapReduce, Google Maps, Google Book Search, "My 
+    Search History," Google Earth, Blogger.com, Google Code hosting, YouTube, and Gmail.
 
 * Key-value and other unstructured databases such as MongoDB, 
-which use rules defined by programmers to comb through large 
-amounts of unstructured data, including documents and websites.
+    which use rules defined by programmers to comb through large 
+    amounts of unstructured data, including documents and websites.
 
 * High-speed databases for processing large streams of data 
-with extremely low latency. Those diverging tasks have driven
- the evolution of some very different technologies that often 
- get lumped together as NoSQL, and some that are labeled as 
- "NewSQL." These provide some of the things that SQL-based
-  relational databases do but are tuned heavily for handling the 
-  demands of big data. VoltDB falls into this category: it's a 
-  high-speed SQL database. Couchbase is another high-speed, more 
-  general-purpose, NoSQL database.
+    with extremely low latency. Those diverging tasks have driven the
+    the evolution of some very different technologies that often 
+    get lumped together as NoSQL, and some that are labeled as 
+    "NewSQL." These provide some of the things that SQL-based
+    relational databases do but are tuned heavily for handling the 
+    demands of big data. VoltDB falls into this category: it's a 
+    high-speed SQL database. Couchbase is another high-speed, more 
+    general-purpose, NoSQL database.
