@@ -8,8 +8,8 @@ executed to determine the total working set of data
  created under the hood containing all the columns 
  and rows of the tables being joined
 2. WHERE
-Once we have the total working set of data, the f
-irst-pass WHERE constraints are applied to the individual
+Once we have the total working set of data, the first-pass
+ WHERE constraints are applied to the individual
  rows, and rows that do not satisfy the constraint are 
  discarded. Each of the constraints can only access columns
   directly from the tables requested in the FROM clause. 
