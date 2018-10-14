@@ -1,13 +1,26 @@
 
 Types of Joins:
 Inner Join
-Select all records from Table A and Table B, where the join condition is met.
+Select all records from Table A and Table B, 
+where the join condition is met.
 Left Join
-Select all records from Table A, along with records from Table B for which the join condition is met (if at all).
+Select all records from Table A, along with 
+records from Table B for which the join condition is met (if at all).
 Right Join
-Select all records from Table B, along with records from Table A for which the join condition is met (if at all).
+Select all records from Table B, along with 
+records from Table A for which the join condition is met (if at all).
 Full Join
-Select all records from Table A and Table B, regardless of whether the join condition is met or not.
+Select all records from Table A and Table B, 
+regardless of whether the join condition is met or not.
 
 Counting Sort:
-Counting sort works when the elements fall within a known range. It allows one to sort elements in an array at speed o(n + k) where k is the known range of the elements in the array. Each number within the array is added to a map that holds a count of each accurance of each number within an array. Each element within the RANGE is then iterated through in order, adding the element the number of times it appears. This means it touches every element within the range even if it did not appear. Counting sort is fast as long as the size of the range + the number of elements does not exceed nlog(n) length, where other sorting methods will be better suited
+Counting sort works when the elements fall within a known range. 
+It allows one to sort elements in an array at speed o(n + k) where
+ k is the known range of the elements in the array. Each number 
+ within the array is added to a map that holds a count of each 
+ accurance of each number within an array. Each element within 
+ the RANGE is then iterated through in order, adding the element 
+ the number of times it appears. This means it touches every element
+  within the range even if it did not appear. Counting sort is fast 
+  as long as the size of the range + the number of elements does not 
+  exceed nlog(n) length, where other sorting methods will be better suited
