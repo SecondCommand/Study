@@ -1,5 +1,18 @@
 SQL vs NoSQL:
-1. Key-value model—the least complex NoSQL option, which stores data in a schema-less way that consists of indexed keys and values. Examples: Cassandra, Azure, LevelDB, and Riak.
-2. Column store—or, wide-column store, which stores data tables as columns rather than rows. It’s more than just an inverted table—sectioning out columns allows for excellent scalability and high performance. Examples: HBase, BigTable, HyperTable.
-3. Document database—taking the key-value concept and adding more complexity, each document in this type of database has its own data, and its own unique key, which is used to retrieve it. It’s a great option for storing, retrieving and managing data that’s document-oriented but still somewhat structured. Examples: MongoDB, CouchDB.
-4. Graph database—have data that’s interconnected and best represented as a graph? This method is capable of lots of complexity. Examples: Polyglot, Neo4J.
+1. Key-value model—the least complex NoSQL option, which 
+stores data in a schema-less way that consists of indexed 
+keys and values. Examples: Cassandra, Azure, LevelDB, and Riak.
+
+2. Column store—or, wide-column store, which stores data tables
+ as columns rather than rows. It’s more than just an inverted 
+ table—sectioning out columns allows for excellent scalability 
+ and high performance. Examples: HBase, BigTable, HyperTable.
+3. Document database—taking the key-value concept and adding 
+more complexity, each document in this type of database has 
+its own data, and its own unique key, which is used to retrieve
+ it. It’s a great option for storing, retrieving and managing 
+ data that’s document-oriented but still somewhat structured. 
+ Examples: MongoDB, CouchDB.
+4. Graph database—have data that’s interconnected and best
+ represented as a graph? This method is capable of lots of 
+ complexity. Examples: Polyglot, Neo4J.
