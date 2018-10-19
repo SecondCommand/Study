@@ -1,0 +1,39 @@
+calStorage vs. sessionStorage vs. Cookies
+In terms of capabilities, cookies, sessionStorage, 
+and localStorage only allow you to store strings - \
+it is possible to implicitly convert primitive values
+ when setting (these will need to be converted back to
+  use them as their type after reading) but not Objects
+   or Arrays (it is possible to JSON serialise them to 
+   store them using the APIs). Session storage will 
+   generally allow you to store any primitives or objects
+    supported by your Server Side language/framework.
+Client-side vs. Server-side
+As HTTP is a stateless protocol - web applications have
+ no way of identifying a user from previous visits on
+  returning to the web site - session data usually relies 
+  on a cookie token to identify the user for repeat visits
+   (although rarely URL parameters may be used for the same
+    purpose). Data will usually have a sliding expiry time
+     (renewed each time the user visits), and depending on 
+     your server/framework data will either be stored in-process
+      (meaning data will be lost if the web server crashes or is restarted)
+       or externally in a state server or database. This is also necessary 
+       when using a web-farm (more than one server for a given website).
+As session data is completely controlled by your application (server side
+) it is the best place for anything sensitive or secure in nature.
+
+The obvious disadvantage of server-side data is scalability - server resources 
+are required for each user for the duration of the session, and that any data 
+needed client side must be sent with each request. As the server has no way of 
+knowing if a user navigates to another site or closes their browser, session
+ data must expire after a given time to avoid all server resources being taken 
+ up by abandoned sessions. When using session data you should, therefore, be 
+ aware of the possibility that data will have expired and been lost, especially 
+ on pages with long forms. It will also be lost if the user deletes their 
+ cookies or switches browsers/devices.
+ 
+Some web frameworks/developers use hidden HTML inputs to persist data from 
+one page of a form to another to avoid session expiration.
+localStorage, sessionStorage, and cookies are all subject to "same-origin" 
+rules which means browsers should prevent access to the data e
